@@ -357,6 +357,7 @@ if user_item_selection == 1
     print_ascii action_box_wallet
     print_text "\nFight: 1\nShow ID: 2\nBribe: 3\n"
     user_action = gets.to_i
+    end
   if user_action == 1
     print_text "\n'So that's how you wanna play it, eh?'\n\n The green man errupts in a flash of emerald light. The smell of fresh onions permeates through the air, making you gag. You look up, and see...\n"
     print_ascii buff_shrek
@@ -364,6 +365,7 @@ if user_item_selection == 1
     print_ascii fight_box
     print_text "\nDodge: 1\nTake The Punch: 2\nBlock: 3\n"
     fight_choice = gets.to_i
+    end
     if fight_choice == 1
       print_text "You attempt to dodge, but in your drunken stupor you're too slow and the mighty green giant collides with your face.\n\n\n"
       print_ascii game_over
@@ -381,6 +383,7 @@ if user_item_selection == 1
       print_ascii fight_box_2
       print_text "\nPunch: 1\nBite: 2\nSeduce: 3\n"
     fight_choice_2 = gets.to_i
+      end
       if fight_choice_2 == 1
         print_text "\nIn your drunken stupor, you throw a punch at the bodyguard. He is left stunned by how weak that punch was. Mid-confusion, you run into the bar. \n\n You enter the bar, and look around. You sit down at the bar, and the bartender greets you.\n"
         print_ascii done_to_em
@@ -401,7 +404,7 @@ if user_item_selection == 1
       return
     end
   #First win condition, showing id and entering bar
-  elsif user_action == 2
+  if user_action == 2
     print_text "\nYou pull out your ID and hand it to the irritated green man. \n'Alright, you can come in' \n\n You enter the bar, and look around. You sit down at the bar, and the bartender greets you.\n"
     print_ascii done_to_em
     print_text "\n'What'll you be having tonight?' \n\n You order your drink, and the night continues. All is well \n\n\n\n\n"
@@ -412,21 +415,19 @@ if user_item_selection == 1
     print_ascii game_over
     return
   end
-elsif user_item_selection == 2
+if user_item_selection == 2
     print_ascii onion
     print_text "\n What will you do?"
     print_ascii action_box
     print_text "\nFight: 1\nBribe: 2\n"
-    if user_action == 2
-      
+    if user_action == 2   
 elsif user_item_selection == 3
     print_ascii lighter 
     print_text "\n What will you do?"
     print_ascii action_box
     print_text "\nFight: 1\nBribe: 2\n"
 end
-
-
+end
 # you: playerchoice: "give item", "no" => if item == "" => game over || if item == "wallet" => present wallet || if item == "onion" => bribe bodyguard to be let in || if item == "lighter" => you wave lighter at bodyguard and fight ensues
 
 
