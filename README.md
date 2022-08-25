@@ -1,13 +1,13 @@
 ## BASIC PLAN
-1. you wake up in a dark alley….
-2. pick up item off the ground between three choices (wallet, lighter, onion, can also select nothing)
-3. you exit the alleyway, and you see a big, green man in front of a doorway…
-4. Bodyguard: who are you?
-  you: enter your name (name = gets)
-    if name == "farquaad" => shrek beats you up, game over
-  bodyguard: how old are you?
-  you: enter your age (age = gets)
-    if age < 21 => "get out of here", game over
+1. you wake up in a dark alley…. ✅
+2. pick up item off the ground between three choices (wallet, lighter, onion, can also select nothing)✅
+3. you exit the alleyway, and you see a big, green man in front of a doorway…✅
+4. Bodyguard: who are you?✅
+  you: enter your name (name = gets)✅
+    if name == "farquaad" => shrek beats you up, game over✅
+  bodyguard: how old are you?✅
+  you: enter your age (age = gets)✅
+    if age < 21 => "get out of here", game over✅
 bodyguard: "can i see your id?"
 you: playerchoice: "give item", "no" => if item == "" => game over || if item == "wallet" => present wallet || if item == "onion" => bribe bodyguard to be let in || if item == "lighter" => you wave lighter at bodyguard and fight ensues
 
