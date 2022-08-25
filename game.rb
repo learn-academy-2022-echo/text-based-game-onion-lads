@@ -298,7 +298,7 @@ def print_text string
 end
 
 # prints title of the game
-# print_title game_name
+print_title game_name
 
 print_text "\n\nYou wake up in a dark alley…"
 
@@ -359,7 +359,7 @@ if user_item_selection == 1
     user_action = gets.to_i
     end
   if user_action == 1
-    print_text "\n'So that's how you wanna play it, eh?'\n\n The green man errupts in a flash of emerald light. The smell of fresh onions permeates through the air, making you gag. You look up, and see...\n"
+    print_text "\n'So that's how you wanna play it, eh?'\n\n The green man erupts in a flash of emerald light. The smell of fresh onions permeates through the air, making you gag. You look up, and see...\n"
     print_ascii buff_shrek
     print_text "\nHe throws a left hook, coming straight for your head! \n What will you do?\n\n"
     print_ascii fight_box
@@ -370,7 +370,7 @@ if user_item_selection == 1
       print_text "You attempt to dodge, but in your drunken stupor you're too slow and the mighty green giant collides with your face.\n\n\n"
       print_ascii game_over
       return
-    elsif fight_choice == 2 && fight_choice == ""
+    elsif fight_choice == 2 || fight_choice == ""
       print_text "\nYou stand stalwart in your defense, lowering your guard and preparing to take the punch. He stops, staring at you with amazement and says 'No ones ever been ready to take my mighty punch before. You have earned my respect. Go ahead and come in.' \n"
       print_text "\n\n You enter the bar, and look around. You sit down at the bar, and the bartender greets you.\n"
       print_ascii done_to_em
@@ -383,7 +383,6 @@ if user_item_selection == 1
       print_ascii fight_box_2
       print_text "\nPunch: 1\nBite: 2\nSeduce: 3\n"
     fight_choice_2 = gets.to_i
-      end
       if fight_choice_2 == 1
         print_text "\nIn your drunken stupor, you throw a punch at the bodyguard. He is left stunned by how weak that punch was. Mid-confusion, you run into the bar. \n\n You enter the bar, and look around. You sit down at the bar, and the bartender greets you.\n"
         print_ascii done_to_em
@@ -403,6 +402,7 @@ if user_item_selection == 1
         print_ascii game_over
       return
     end
+  end
   #First win condition, showing id and entering bar
   if user_action == 2
     print_text "\nYou pull out your ID and hand it to the irritated green man. \n'Alright, you can come in' \n\n You enter the bar, and look around. You sit down at the bar, and the bartender greets you.\n"
